@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "986650886712",
+    "firebase_url": "https://rudebot-ec8f1.firebaseio.com",
+    "project_id": "rudebot-ec8f1",
+    "storage_bucket": "rudebot-ec8f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986650886712:android:9d7f0d739b749026",
+        "android_client_info": {
+          "package_name": "com.example.inpota00.sosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986650886712-m9qluil0i4218t88cafl3g4kqiipbf76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALYBkwFwv0VgYkNzTpLaZTsapOcXUo72I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

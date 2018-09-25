@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.inpota00.sosapp.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/sosLinLay"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sos"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/warning"
+            android:tint="#ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sendSos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="60sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/waitForHelp"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:text="Your SOS has been issued\nStay safe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:id="@+id/afterReceiveImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/helpImage"
+                    android:layout_margin="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/helpMessage"
+                        android:hint="Message (required)"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="0dp" />
+
+                    <EditText
+                        android:id="@+id/phoneNo"
+                        android:hint="Contact No. (required)"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:inputType="phone"
+                        android:layout_height="0dp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/sendButton"
+                android:text="Send SOS"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</layout>
